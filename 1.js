@@ -1,3 +1,5 @@
+// Hello user
+
 function greeting(name) {
   return "Welcome " + name;
 }

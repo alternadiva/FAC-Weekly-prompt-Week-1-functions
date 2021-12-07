@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Functions</title>
+</head>
+
+<body>
+    <p id="open-console">Open console to see the results (Press Command + Option + J (Mac) or Control + Shift + J
+        (Windows, Linux, Chrome OS))</p>
+    <div class="code-snippet">
+        <code> <pre>
+// Hello user
+function greeting(name) {
+    return "Welcome " + name;
+}
+              
+console.log(greeting("Annie"));
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// What type?
+function checkType(arg) {
+    return typeof(arg);
+}
+            
+console.log(checkType(12));
+
+let typeOf = "this is a string";
+console.log(checkType(typeOf));
+            
+// Bonus: Examine the output we get when we check the type of an array. Why does this happen? 
+//Because arrays are not primitive data types
+        </pre></code>
+    </div>
+
+    <div class="code-snippet">
+        <code> <pre>
+// Check length
+function stringLength(str) {
+    return str.length;
+}
+            
+const theLength = stringLength("Around the World");
+console.log(theLength);
+            
+console.log(stringLength("One More Time"));
+            
+//Bonus: Can we use the length property on other types of variable? What else might this be useful for?
+//We can also use it on arrays 
+        </pre></code>
+    </div>
+
+    <script src="1.js"></script>
+    <script src="2.js"></script>
+    <script src="3.js"></script>
+</body>
+
+</html>
